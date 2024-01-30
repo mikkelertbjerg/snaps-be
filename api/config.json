@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "Schnapps": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Schnapps"
+  }
+}

@@ -9,9 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<SchanppsDbContext>(options =>
+builder.Services.AddDbContext<SchanppsContext>(options =>
 {
-    options.UseSqlServer("name=ConnectionsStrings:Schanpps");
+    options.UseSqlServer(builder.Configuration["ConnectionString:Schnapps"]);
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
